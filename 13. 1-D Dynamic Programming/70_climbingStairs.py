@@ -1,12 +1,12 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
         #Construct the array, start with base cases    
-        dp = [0] * (n+1) 
-        dp[0] = 1 
-        dp[1] = 1 
+        staircaseSteps = [0] * (n+1) 
+        staircaseSteps[0] = 1 
+        staircaseSteps[1] = 1 
 
         for i in range(2,n+1): 
-            dp[i] = dp[i-1] + dp[i-2]
+            starcaseSteps[i] = staircaseSteps[i-1] + staircaseSteps[i-2]
 
-        return dp[n]
+        return staircaseSteps[n]
         
